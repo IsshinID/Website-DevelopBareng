@@ -320,6 +320,11 @@ p{
 }
 
 /* untuk portofolio */
+.portfolio {
+    padding: 10px;
+    padding-top: 60px;
+}
+
 .card{
     width: 1280px;
     margin: 70px auto 0;
@@ -328,7 +333,7 @@ p{
     flex-wrap: wrap;
 }
 
-.card .box{
+.card .item{
     position: relative;
     width: 400px;
     height: 300px;
@@ -367,21 +372,34 @@ p{
 .portfolio .filter-buttons {
     margin-bottom: 25px;
 }
-.card .box .imgBox {
+
+.portfolio .portfolio-gallery {
+    flex: 0 0 100%;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio h2{
+    font-size: 27px;
+    color: #040041;
+}
+
+.card .item .imgBox {
     position: relative;
     overflow: hidden;
 }
 
-.card .box .imgBox img{
+.card .item .imgBox img{
     max-width: 100%;
     transition: transform 2s;
 }
 
-.card .box:hover .imgBox img{
+.card .item:hover .imgBox img{
     transform: scale(1.2);
 }
 
-.card .box .details{
+.card .item .details{
     position: absolute;
     top: 1px;
     left: 1px;
@@ -392,11 +410,11 @@ p{
     transition: transform .5s;
 }
 
-.card .box:hover .details{
+.card .item:hover .details{
     transform: scaleY(1);
 }
 
-.card .box .details .konten{
+.card .item .details .konten{
     position: absolute;
     top: 30%;
     transform: translateY(-50%);
@@ -405,20 +423,20 @@ p{
     color: #fff;
 }
 
-.card .box .details .konten h2{
+.card .item .details .konten h2{
     margin: 10px 0 0;
     padding: 0;
     font-size: 18px;
     color: #ff0;
 }
 
-.card .box .details .konten p{
+.card .item .details .konten p{
     padding: 20px;
     padding-left: 3px;
     color: white;
 }
 
-.card .box .details .konten a{
+.card .item .details .konten a{
     color: #040041;
 }
 .button{
@@ -439,6 +457,7 @@ p{
 /* untuk review */
 .review {
     padding: 100px;
+    padding-top: 50px;
 }
 .review .row .gambar img{
     padding: 40px;
@@ -492,7 +511,7 @@ footer{
     margin-bottom: 2em;
 }
 .footer-left h1{
-    padding-left: 66px;
+    padding-left: 150px;
 }
 
 h2 {
@@ -545,10 +564,10 @@ h2 {
          flex: 1;
      }
      .footer-left{
-         flex: 2 0px;
+         flex: 1 0px;
      }
      .footer-right{
-         flex: 2 0px;
+         flex: 1 0px;
      }
  }
 
